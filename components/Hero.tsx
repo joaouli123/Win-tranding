@@ -67,7 +67,8 @@ const Hero: React.FC = () => {
               className="w-full max-w-[500px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none relative z-50"
               style={{
                 // Moved even further up to touch the navbar text base as requested
-                transform: 'rotate(-5deg) translateY(-210px) translateX(10px)',
+                // Using scale to keep it large while translateY pulls it up
+                transform: 'rotate(-5deg) translateY(-280px) scale(1.2) translateX(10px)',
               }}
             />
           </div>

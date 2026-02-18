@@ -32,23 +32,10 @@ const Navbar: React.FC = () => {
     >
       {/* --- Top Bar --- */}
       <div className={`w-full border-b border-white/10 bg-[#020617] text-gray-400 text-xs py-2 transition-all duration-300 ${scrolled ? 'py-1' : 'py-2'}`}>
-        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-between items-center gap-2">
+        <div className="container mx-auto px-6 flex flex-col md:flex-row justify-end items-center gap-2">
           
-          {/* Contact Info */}
-          <div className="flex items-center gap-4 md:gap-6">
-            <a href="tel:+5547996213081" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
-              <Phone size={12} className="text-brand-accent" />
-              <span>+55 (47) 99621-3081</span>
-            </a>
-            <a href="mailto:email@email.com" className="flex items-center gap-2 hover:text-brand-accent transition-colors">
-              <Mail size={12} className="text-brand-accent" />
-              <span>email@email.com</span>
-            </a>
-          </div>
-
           {/* Language / Actions */}
           <div className="flex items-center gap-4">
-             <span className="hidden md:block opacity-30">|</span>
              <div className="flex items-center gap-3">
                <button className="hover:opacity-100 opacity-70 transition-opacity flex items-center gap-1.5 group" title="Português">
                  <img src="https://flagcdn.com/w20/br.png" alt="Português" className="w-5 h-auto rounded-sm group-hover:scale-110 transition-transform" />

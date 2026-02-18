@@ -73,10 +73,10 @@ const Blog: React.FC = () => {
           </div>
         </div>
 
-        {/* Blog Grid with "Escadinha" (Staggered) Effect & Badges */}
+        {/* Blog Grid with "Escadinha" (Staggered) Effect */}
         <div 
           ref={scrollRef}
-          className="flex overflow-x-auto md:grid md:grid-cols-3 gap-8 pb-12 snap-x snap-mandatory scrollbar-hide no-scrollbar"
+          className="flex overflow-x-hidden md:grid md:grid-cols-3 gap-8 pb-12 snap-x snap-mandatory"
         >
           {posts.map((post, index) => (
             <article 
@@ -96,15 +96,6 @@ const Blog: React.FC = () => {
                   alt={post.title} 
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110 opacity-90 group-hover:opacity-100"
                 />
-                
-                {/* Number Badge - Overlapping Image & Content */}
-                <div className="absolute -bottom-5 left-8 w-12 h-12 bg-brand-secondary text-white font-bold text-sm flex items-center justify-center rounded-full border-4 border-[#0f172a] shadow-lg z-10 group-hover:bg-brand-accent transition-colors md:block hidden">
-                  0{index + 1}
-                </div>
-                {/* Mobile version of the badge that stays high */}
-                <div className="absolute -bottom-2 left-8 w-10 h-10 bg-brand-secondary text-white font-bold text-xs flex items-center justify-center rounded-full border-4 border-[#0f172a] shadow-lg z-10 md:hidden">
-                  0{index + 1}
-                </div>
               </div>
 
               {/* Content Section */}

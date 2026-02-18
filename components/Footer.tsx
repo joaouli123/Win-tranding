@@ -97,7 +97,7 @@ const Footer: React.FC = () => {
 
         {/* 4. Bottom Bar */}
         <div className="border-t border-white/5 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-600">
-          <p className="mb-4 md:mb-0">Copyright © 2026 Win Trading Ltda. Todos os direitos reservados.</p>
+          <p className="mb-4 md:mb-0">Copyright © 2026 – Win Trading Ltda – 26.316.473/0001-96</p>
           <div className="flex gap-6">
              <a href="#" className="hover:text-brand-accent transition-colors">Política de Privacidade</a>
              <a href="#" className="hover:text-brand-accent transition-colors">Termos e Serviços</a>

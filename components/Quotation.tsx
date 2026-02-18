@@ -48,8 +48,8 @@ const Quotation: React.FC = () => {
               Dados da Carga
             </h3>
             
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="col-span-1 group">
+            <form className="flex flex-col md:grid md:grid-cols-2 gap-6">
+              <div className="group">
                 <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Partida</label>
                 <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
                   <MapPin size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
@@ -57,7 +57,7 @@ const Quotation: React.FC = () => {
                 </div>
               </div>
 
-              <div className="col-span-1 group">
+              <div className="group">
                 <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Destino</label>
                 <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
                   <MapPin size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
@@ -65,7 +65,7 @@ const Quotation: React.FC = () => {
                 </div>
               </div>
 
-              <div className="col-span-1 group">
+              <div className="group">
                 <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Modalidade</label>
                 <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
                   <Box size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
@@ -79,7 +79,7 @@ const Quotation: React.FC = () => {
                 </div>
               </div>
 
-              <div className="col-span-1 group">
+              <div className="group">
                 <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Peso (KG)</label>
                 <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
                   <Weight size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
@@ -87,7 +87,7 @@ const Quotation: React.FC = () => {
                 </div>
               </div>
 
-              <div className="col-span-2 group">
+              <div className="md:col-span-2 group">
                 <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Seu e-mail</label>
                 <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
                   <Mail size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
@@ -95,7 +95,7 @@ const Quotation: React.FC = () => {
                 </div>
               </div>
 
-              <div className="col-span-2 mt-2">
+              <div className="md:col-span-2 mt-2">
                 <button type="submit" className="w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold uppercase tracking-widest py-4 rounded-sm transition-all shadow-[0_4px_20px_0_rgba(0,182,255,0.3)] hover:shadow-[0_8px_30px_rgba(0,182,255,0.4)] hover:-translate-y-1 flex justify-center items-center gap-2 group">
                   Solicitar Cotação
                   <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />

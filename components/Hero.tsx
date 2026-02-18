@@ -67,7 +67,7 @@ const Hero: React.FC = () => {
               className="w-full max-w-[500px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none"
               style={{
                 // Changed translateY to -60px to move it UP over the stats
-                transform: 'rotate(-5deg) translateY(-60px) translateX(10px)',
+                transform: 'rotate(-5deg) translateY(-40px) translateX(10px)',
               }}
             />
           </div>

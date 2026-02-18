@@ -112,20 +112,24 @@ const Testimonials: React.FC = () => {
           </div>
 
           {/* Right Column: Static Text Content & Controls */}
-          <div className="w-full lg:w-1/2 lg:pl-10 mt-10 lg:mt-0">
-             <span className="text-brand-accent font-bold tracking-[0.2em] uppercase text-sm mb-4 block animate-fade-in-up">
+          <div className="w-full lg:w-1/2 lg:pl-10 mt-10 lg:mt-0 flex flex-col">
+             <span className="text-brand-accent font-bold tracking-[0.2em] uppercase text-sm mb-4 block animate-fade-in-up order-1">
                 CLIENTES
              </span>
-             <h2 className="text-3xl md:text-4xl font-black leading-[1.1] tracking-tight text-white mb-8 animate-fade-in-up delay-100">
+             <h2 className="text-3xl md:text-4xl font-black leading-[1.1] tracking-tight text-white mb-8 animate-fade-in-up delay-100 order-2">
                 O que nossos clientes <br />
                 dizem sobre nós
              </h2>
-             <p className="text-gray-400 text-lg leading-relaxed mb-12 animate-fade-in-up delay-200 font-medium">
+             <p className="text-gray-400 text-lg leading-relaxed mb-12 animate-fade-in-up delay-200 font-medium order-3">
                 A satisfação de quem confia no nosso trabalho é o que nos move. Confira o impacto real das nossas soluções no dia a dia de empresas e profissionais que buscam excelência.
              </p>
              
+             <a href="#cotacao" className="inline-flex items-center gap-2 text-brand-accent font-bold uppercase tracking-wider hover:text-white transition-colors animate-fade-in-up delay-300 group order-4 mb-8 lg:mb-0">
+                Falar com um especialista <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform"/>
+             </a>
+
              {/* Navigation Controls */}
-             <div className="flex items-center gap-6 mb-8 animate-fade-in-up delay-300">
+             <div className="flex items-center gap-6 mb-8 animate-fade-in-up delay-300 order-5 lg:mt-8">
                 <button 
                   onClick={handlePrev} 
                   className="w-14 h-14 rounded-full border border-white/20 hover:bg-brand-accent hover:border-brand-accent text-white flex items-center justify-center transition-all group"
@@ -141,10 +145,6 @@ const Testimonials: React.FC = () => {
                     <ChevronRight size={24} className="group-hover:translate-x-1 transition-transform" />
                 </button>
              </div>
-
-             <a href="#cotacao" className="inline-flex items-center gap-2 text-brand-accent font-bold uppercase tracking-wider hover:text-white transition-colors animate-fade-in-up delay-300 group">
-                Falar com um especialista <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform"/>
-             </a>
           </div>
 
         </div>

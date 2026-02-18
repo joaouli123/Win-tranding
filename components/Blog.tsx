@@ -49,12 +49,13 @@ const Blog: React.FC = () => {
         </div>
 
         {/* Blog Grid with "Escadinha" (Staggered) Effect & Badges */}
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8 pb-12">
+        <div className="flex overflow-x-auto md:grid md:grid-cols-3 gap-8 pb-12 snap-x snap-mandatory scrollbar-hide">
           {posts.map((post, index) => (
             <article 
               key={post.id} 
               className={`
                 group bg-[#0f172a] rounded-sm overflow-hidden border border-white/5 hover:border-brand-accent/50 transition-all duration-300 hover:-translate-y-2 relative
+                min-w-[85vw] md:min-w-0 snap-center
                 /* Escadinha Effect: Stagger vertical position based on index */
                 ${index === 1 ? 'md:mt-8' : ''} 
                 ${index === 2 ? 'md:mt-16' : ''}

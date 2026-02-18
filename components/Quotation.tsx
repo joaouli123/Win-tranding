@@ -44,32 +44,32 @@ const Quotation: React.FC = () => {
           {/* Right Side: Form (Dark Mode) */}
           <div className="lg:w-3/5 bg-brand-card p-8 md:p-12 border-l border-white/5">
             <h3 className="text-2xl font-bold text-white mb-8 flex items-center gap-2">
-              <span className="w-1 h-8 bg-brand-accent block rounded-full"></span>
+              <span className="w-1.5 h-8 bg-brand-accent block rounded-full"></span>
               Dados da Carga
             </h3>
             
-            <form className="grid grid-cols-1 md:grid-cols-2 gap-8">
+            <form className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div className="col-span-1 group">
-                <label className="block text-xs font-bold uppercase text-brand-gray mb-2 group-focus-within:text-brand-accent transition-colors">Partida</label>
-                <div className="flex items-center bg-brand-dark border border-gray-800 rounded-sm px-4 py-3 group-focus-within:border-brand-accent transition-all duration-300">
-                  <MapPin size={18} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
+                <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Partida</label>
+                <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
+                  <MapPin size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
                   <input type="text" placeholder="Cidade/País de partida" className="w-full outline-none bg-transparent text-white placeholder-gray-600 text-sm" />
                 </div>
               </div>
 
               <div className="col-span-1 group">
-                <label className="block text-xs font-bold uppercase text-brand-gray mb-2 group-focus-within:text-brand-accent transition-colors">Destino</label>
-                <div className="flex items-center bg-brand-dark border border-gray-800 rounded-sm px-4 py-3 group-focus-within:border-brand-accent transition-all duration-300">
-                  <MapPin size={18} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
+                <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Destino</label>
+                <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
+                  <MapPin size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
                   <input type="text" placeholder="Cidade/Estado de entrega" className="w-full outline-none bg-transparent text-white placeholder-gray-600 text-sm" />
                 </div>
               </div>
 
               <div className="col-span-1 group">
-                <label className="block text-xs font-bold uppercase text-brand-gray mb-2 group-focus-within:text-brand-accent transition-colors">Selecione:</label>
-                <div className="flex items-center bg-brand-dark border border-gray-800 rounded-sm px-4 py-3 group-focus-within:border-brand-accent transition-all duration-300">
-                  <Box size={18} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
-                  <select className="w-full outline-none bg-transparent text-white text-sm cursor-pointer [&>option]:text-black">
+                <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Modalidade</label>
+                <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
+                  <Box size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
+                  <select className="w-full outline-none bg-transparent text-white text-sm cursor-pointer [&>option]:text-black appearance-none">
                     <option value="" className="text-gray-500">Selecione o tipo...</option>
                     <option>Container FCL</option>
                     <option>Carga Solta LCL</option>
@@ -80,25 +80,25 @@ const Quotation: React.FC = () => {
               </div>
 
               <div className="col-span-1 group">
-                <label className="block text-xs font-bold uppercase text-brand-gray mb-2 group-focus-within:text-brand-accent transition-colors">Peso (KG)</label>
-                <div className="flex items-center bg-brand-dark border border-gray-800 rounded-sm px-4 py-3 group-focus-within:border-brand-accent transition-all duration-300">
-                  <Weight size={18} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
+                <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Peso (KG)</label>
+                <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
+                  <Weight size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
                   <input type="number" placeholder="0.00" className="w-full outline-none bg-transparent text-white placeholder-gray-600 text-sm" />
                 </div>
               </div>
 
               <div className="col-span-2 group">
-                <label className="block text-xs font-bold uppercase text-brand-gray mb-2 group-focus-within:text-brand-accent transition-colors">Seu e-mail</label>
-                <div className="flex items-center bg-brand-dark border border-gray-800 rounded-sm px-4 py-3 group-focus-within:border-brand-accent transition-all duration-300">
-                  <Mail size={18} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
+                <label className="block text-[10px] font-bold uppercase text-brand-gray mb-1.5 tracking-widest group-focus-within:text-brand-accent transition-colors">Seu e-mail</label>
+                <div className="flex items-center bg-brand-dark/50 border border-white/10 rounded-sm px-4 py-3 group-focus-within:border-brand-accent group-focus-within:bg-brand-dark transition-all duration-300">
+                  <Mail size={16} className="text-gray-500 mr-3 group-focus-within:text-brand-accent" />
                   <input type="email" placeholder="seu.nome@empresa.com.br" className="w-full outline-none bg-transparent text-white placeholder-gray-600 text-sm" />
                 </div>
               </div>
 
-              <div className="col-span-2 mt-4">
-                <button type="submit" className="w-full bg-brand-accent hover:bg-brand-secondary text-white font-bold uppercase tracking-wider py-4 rounded-sm transition-all shadow-[0_4px_14px_0_rgba(0,182,255,0.39)] hover:shadow-[0_6px_20px_rgba(0,80,187,0.23)] hover:-translate-y-1 flex justify-center items-center gap-2 group">
+              <div className="col-span-2 mt-2">
+                <button type="submit" className="w-full bg-brand-accent hover:bg-brand-accentHover text-white font-bold uppercase tracking-widest py-4 rounded-sm transition-all shadow-[0_4px_20px_0_rgba(0,182,255,0.3)] hover:shadow-[0_8px_30px_rgba(0,182,255,0.4)] hover:-translate-y-1 flex justify-center items-center gap-2 group">
                   Solicitar Cotação
-                  <ArrowRight size={20} className="group-hover:translate-x-1 transition-transform" />
+                  <ArrowRight size={18} className="group-hover:translate-x-1 transition-transform" />
                 </button>
               </div>
             </form>

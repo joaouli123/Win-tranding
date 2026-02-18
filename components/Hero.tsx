@@ -28,12 +28,12 @@ const Hero: React.FC = () => {
             <p className="text-brand-accent font-bold tracking-[0.2em] uppercase mb-4 animate-fade-in-up text-xs md:text-sm">
               Bem-vindo a Win Trading
             </p>
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-tight mb-6 animate-fade-in-up delay-100 text-white tracking-tight">
+            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-8 animate-fade-in-up delay-100 text-white tracking-tight">
               Transformando <br />
               fronteiras em <br />
-              <span className="text-brand-accent">oportunidades.</span>
+              <span className="text-brand-accent drop-shadow-[0_0_15px_rgba(0,182,255,0.3)]">oportunidades.</span>
             </h1>
-            <p className="text-gray-400 text-base md:text-lg mb-8 leading-relaxed max-w-lg animate-fade-in-up delay-200 border-l-4 border-brand-accent pl-6">
+            <p className="text-gray-300 text-lg md:text-xl mb-10 leading-relaxed max-w-lg animate-fade-in-up delay-200 border-l-4 border-brand-accent pl-8 py-2">
               Simplifique sua importação com a Win Trading. Unimos inteligência estratégica e segurança jurídica para reduzir seus custos e riscos operacionais.
             </p>
             

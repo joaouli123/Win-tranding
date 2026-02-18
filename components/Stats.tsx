@@ -8,7 +8,7 @@ const Stats: React.FC = () => {
   ];
 
   return (
-    <div className="relative z-30 container mx-auto px-6">
+    <div className="relative z-30 container mx-auto px-6 -mt-12 md:-mt-20">
       {/* Removed the large negative top margin (-mt-20) here because we are using negative bottom margin on Hero now */}
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0 shadow-[0_20px_50px_rgba(0,0,0,0.3)] bg-brand-darker">
         {stats.map((stat, index) => (

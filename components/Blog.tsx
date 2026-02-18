@@ -41,7 +41,6 @@ const Blog: React.FC = () => {
         {/* Header Section matching reference */}
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-3xl">
-            <span className="text-brand-accent font-bold tracking-[0.2em] uppercase mb-4 block text-sm">Win Trading Posts</span>
             <h2 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
               Acompanhe nossos posts <br/> mais recentes:
             </h2>
@@ -99,13 +98,17 @@ const Blog: React.FC = () => {
                 />
                 
                 {/* Number Badge - Overlapping Image & Content */}
-                <div className="absolute -bottom-5 left-8 w-12 h-12 bg-brand-secondary text-white font-bold text-sm flex items-center justify-center rounded-full border-4 border-[#0f172a] shadow-lg z-10 group-hover:bg-brand-accent transition-colors">
+                <div className="absolute -bottom-5 left-8 w-12 h-12 bg-brand-secondary text-white font-bold text-sm flex items-center justify-center rounded-full border-4 border-[#0f172a] shadow-lg z-10 group-hover:bg-brand-accent transition-colors md:block hidden">
+                  0{index + 1}
+                </div>
+                {/* Mobile version of the badge that stays high */}
+                <div className="absolute -bottom-2 left-8 w-10 h-10 bg-brand-secondary text-white font-bold text-xs flex items-center justify-center rounded-full border-4 border-[#0f172a] shadow-lg z-10 md:hidden">
                   0{index + 1}
                 </div>
               </div>
 
               {/* Content Section */}
-              <div className="pt-10 px-8 pb-8 relative">
+              <div className="pt-6 md:pt-10 px-8 pb-8 relative">
                 <h3 className="text-xl font-bold mb-4 text-white group-hover:text-brand-accent transition-colors leading-tight">
                   {post.title}
                 </h3>

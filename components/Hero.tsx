@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     // Removed z-20 from here so children z-indexes interact with siblings (Stats) correctly
     // Kept relative and other layout classes
-    <section id="home" className="relative w-full pt-40 pb-24 md:pt-44 md:pb-36 lg:-mb-48 bg-brand-darker overflow-visible">
+    <section id="home" className="relative w-full pt-40 pb-24 md:pt-44 md:pb-36 lg:-mb-48 bg-brand-darker overflow-visible lg:overflow-visible overflow-hidden">
       {/* Background decoration - z-0 to stay behind everything */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-darker via-[#050b1d] to-brand-darker z-0" />
       
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
               src="https://uxcodedev.com.br/wp-content/uploads/2026/02/Design-sem-nome-3.svg" 
               alt="Cargo Container Illustration" 
               // Using SVG ensures crispness at any size
-              className="w-full max-w-[500px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none"
+              className="w-full max-w-[500px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none relative z-50"
               style={{
                 // Changed translateY to -60px to move it UP over the stats
                 transform: 'rotate(-5deg) translateY(-40px) translateX(10px)',

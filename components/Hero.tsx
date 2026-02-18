@@ -61,7 +61,7 @@ const Hero: React.FC = () => {
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-brand-accent/20 blur-[100px] rounded-full -z-10"></div>
              
              <img 
-              src="https://uxcodedev.com.br/wp-content/uploads/2026/02/Design-sem-nome-3.svg" 
+              src="/images/Design sem nome (4).svg" 
               alt="Cargo Container Illustration" 
               // Using SVG ensures crispness at any size
               className="w-full max-w-[500px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none relative z-50"

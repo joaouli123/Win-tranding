@@ -116,11 +116,11 @@ const Testimonials: React.FC = () => {
              <span className="text-brand-accent font-bold tracking-[0.2em] uppercase text-sm mb-4 block animate-fade-in-up">
                 CLIENTES
              </span>
-             <h2 className="text-3xl md:text-5xl font-white leading-tight font-sans tracking-tight text-white mb-6 animate-fade-in-up delay-100">
+             <h2 className="text-4xl md:text-5xl font-black leading-[1.1] tracking-tight text-white mb-8 animate-fade-in-up delay-100">
                 O que nossos clientes <br />
                 dizem sobre nós
              </h2>
-             <p className="text-gray-400 text-lg leading-relaxed mb-10 animate-fade-in-up delay-200">
+             <p className="text-gray-400 text-lg leading-relaxed mb-12 animate-fade-in-up delay-200 font-medium">
                 A satisfação de quem confia no nosso trabalho é o que nos move. Confira o impacto real das nossas soluções no dia a dia de empresas e profissionais que buscam excelência.
              </p>
              

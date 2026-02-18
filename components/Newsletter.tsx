@@ -26,15 +26,15 @@ const Newsletter: React.FC = () => {
 
           {/* Right Form - Styled like reference */}
           <div className="w-full lg:w-1/2 max-w-lg">
-            <form className="relative flex items-center">
+            <form className="relative flex items-center group">
               <input 
                 type="email" 
                 placeholder="exemplo@email.com" 
-                className="w-full bg-transparent border-b-2 border-white/30 py-4 px-2 text-white placeholder-blue-200 outline-none focus:border-white transition-all text-lg"
+                className="w-full bg-transparent border-b-2 border-white/20 py-4 px-2 text-white placeholder-blue-100/50 outline-none focus:border-white transition-all text-lg font-light"
               />
               <button 
                 type="submit" 
-                className="absolute right-0 top-1/2 -translate-y-1/2 bg-brand-darker hover:bg-black text-white font-bold uppercase text-xs tracking-wider px-6 py-3 rounded-full transition-colors shadow-lg"
+                className="absolute right-0 top-1/2 -translate-y-1/2 bg-brand-darker hover:bg-black text-white font-bold uppercase text-[10px] tracking-[0.2em] px-8 py-3.5 rounded-full transition-all shadow-xl hover:-translate-y-[calc(50%+2px)] active:translate-y-[calc(50%-1px)]"
               >
                 Inscrever
               </button>

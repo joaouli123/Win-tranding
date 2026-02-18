@@ -22,11 +22,11 @@ const Stats: React.FC = () => {
             {/* Hover effect background */}
             <div className="absolute inset-0 bg-brand-accent/20 translate-y-full group-hover:translate-y-0 transition-transform duration-500 ease-in-out"></div>
             
-            <h3 className={`text-5xl md:text-6xl font-black mb-2 relative z-10 tracking-tighter ${index % 2 === 0 ? 'text-white' : 'text-white'}`}>
+            <h3 className={`text-5xl md:text-6xl font-black mb-3 relative z-10 tracking-tighter ${index % 2 === 0 ? 'text-white' : 'text-white'}`}>
               {stat.value}
             </h3>
             <p className={`
-              text-sm font-bold uppercase tracking-widest relative z-10
+              text-[10px] font-bold uppercase tracking-[0.3em] relative z-10
               ${index % 2 === 0 ? 'text-brand-accent' : 'text-blue-100'}
             `}>
               {stat.label}

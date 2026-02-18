@@ -66,8 +66,8 @@ const Hero: React.FC = () => {
               // Using SVG ensures crispness at any size
               className="w-full max-w-[500px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none relative z-50"
               style={{
-                // Changed translateY to -60px to move it UP over the stats
-                transform: 'rotate(-5deg) translateY(20px) translateX(10px)',
+                // Moved even further up to touch the navbar text base as requested
+                transform: 'rotate(-5deg) translateY(-210px) translateX(10px)',
               }}
             />
           </div>

@@ -189,8 +189,8 @@ const Services: React.FC = () => {
                   style={{ width: `${100 / itemsPerView}%` }}
                 >
                   <div className="bg-[#0f172a] rounded-lg overflow-hidden h-full border border-white/5 hover:border-brand-accent transition-all group/card flex flex-col">
-                    {/* Image Area - Half Height */}
-                    <div className="h-48 overflow-hidden relative">
+                    {/* Image Area - Increased Height */}
+                    <div className="h-64 overflow-hidden relative">
                       <img 
                         src={service.image} 
                         alt={service.title} 

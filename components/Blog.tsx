@@ -61,7 +61,7 @@ const Blog: React.FC = () => {
               `}
             >
               {/* Image Section */}
-              <div className="relative h-60 overflow-hidden">
+              <div className="relative h-80 overflow-hidden">
                 <img 
                   src={post.image} 
                   alt={post.title} 

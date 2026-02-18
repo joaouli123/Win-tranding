@@ -2,7 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Mail, Instagram, Linkedin, Facebook, Youtube } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const logoUrl = "https://uxcodedev.com.br/wintrading/wp-content/uploads/2026/01/logo_wintrading-1.png-4.png";
+  const logoUrl = "/images/footer-logo.png";
 
   return (
     <footer className="bg-[#020617] text-white pt-20 pb-8 font-sans relative z-10 border-t border-white/5">
@@ -12,7 +12,7 @@ const Footer: React.FC = () => {
         <div className="flex flex-col items-center justify-center mb-16 text-center max-w-2xl mx-auto">
           <div className="mb-6">
              {/* Updated to use the new wide logo, removed the text span as the logo likely contains the name */}
-             <img src={logoUrl} alt="Win Trading" className="h-12 md:h-16 w-auto object-contain" />
+             <img src={logoUrl} alt="Win Trading" className="h-12 md:h-16 w-auto object-contain brightness-0 invert" />
           </div>
           <p className="text-gray-400 text-sm leading-relaxed">
             Transformando fronteiras em oportunidades de negócio. Simplifique sua importação com inteligência estratégica e segurança jurídica.

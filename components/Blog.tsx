@@ -20,7 +20,7 @@ const Blog: React.FC = () => {
       id: '3',
       title: 'Gestão de Riscos Documentais',
       excerpt: 'Evite multas e atrasos desnecessários com um checklist rigoroso para seu despacho aduaneiro.',
-      image: 'https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=1470&auto=format&fit=crop'
+      image: '/images/blog-fix.png'
     }
   ];
 

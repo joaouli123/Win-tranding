@@ -137,7 +137,7 @@ const Services: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-12 lg:gap-8 items-stretch">
           
           {/* Left Column - Fixed Info */}
-          <div className="lg:w-1/3 flex flex-col justify-center shrink-0 pr-0 lg:pr-4">
+          <div className="lg:w-[40%] flex flex-col justify-center shrink-0 pr-0 lg:pr-4">
             <div className="bg-brand-card border border-white/5 hover:border-brand-accent/30 p-8 md:p-10 rounded-sm shadow-xl h-full flex flex-col justify-center transition-colors duration-500">
                 <h4 className="text-sm font-bold tracking-[0.2em] uppercase text-brand-accent mb-4">
                 NOSSOS SERVIÇOS
@@ -167,7 +167,7 @@ const Services: React.FC = () => {
 
           {/* Right Column - Carousel */}
           <div 
-            className="lg:w-2/3 overflow-hidden relative group"
+            className="lg:w-[60%] overflow-hidden relative group"
             onMouseEnter={() => setIsPaused(true)}
             onMouseLeave={() => setIsPaused(false)}
             onTouchStart={handleTouchStart}

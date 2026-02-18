@@ -59,11 +59,13 @@ const Navbar: React.FC = () => {
         <div className="container mx-auto px-6 flex justify-between items-center">
           
           {/* Logo */}
-          <a href="#home" className="flex items-center gap-3 group">
+          <a href="#home" className="flex items-center gap-3 group" aria-label="Voltar para o início">
             <img 
               src={logoUrl} 
-              alt="Win Trading Logo" 
+              alt="Logo Win Trading" 
               className="h-12 md:h-16 w-auto object-contain drop-shadow-[0_0_15px_rgba(0,182,255,0.5)] transition-transform group-hover:scale-110" 
+              width="64"
+              height="64"
             />
           </a>
 

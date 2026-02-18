@@ -204,7 +204,7 @@ const Services: React.FC = () => {
                       <h3 className="text-xl font-bold text-white mb-3 leading-tight group-hover/card:text-brand-accent transition-colors">
                         {service.title}
                       </h3>
-                      <p className="text-gray-400 text-sm leading-relaxed mb-6">
+                      <p className="text-gray-400 text-sm leading-relaxed mb-6 group-hover/card:text-gray-300 transition-colors">
                         {service.description}
                       </p>
                       <span className="text-brand-accent text-xs font-bold uppercase tracking-wider flex items-center gap-1 group-hover/card:translate-x-2 transition-transform">

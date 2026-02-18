@@ -62,7 +62,9 @@ const Hero: React.FC = () => {
              
              <img 
               src="/images/Design sem nome (4).svg" 
-              alt="Cargo Container Illustration" 
+              alt="Ilustração de Container de Carga - Win Trading" 
+              loading="eager"
+              fetchpriority="high"
               // Using SVG ensures crispness at any size
               className="w-full max-w-[380px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none relative z-50"
               style={{

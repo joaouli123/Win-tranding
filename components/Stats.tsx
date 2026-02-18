@@ -77,12 +77,12 @@ const Stats: React.FC = () => {
             <h3 className={`text-5xl md:text-6xl font-black mb-3 relative z-10 tracking-tighter ${index % 2 === 0 ? 'text-white' : 'text-white'}`}>
               <CountUp end={stat.value} />
             </h3>
-            <p className={`
+            <h4 className={`
               text-[10px] font-bold uppercase tracking-[0.3em] relative z-10
               ${index % 2 === 0 ? 'text-brand-accent' : 'text-blue-100'}
             `}>
               {stat.label}
-            </p>
+            </h4>
           </div>
         ))}
       </div>

@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     // Removed z-20 from here so children z-indexes interact with siblings (Stats) correctly
     // Kept relative and other layout classes
-    <section id="home" className="relative w-full pt-[100px] pb-24 md:pt-[10px] md:pb-36 lg:-mb-48 bg-brand-darker overflow-visible lg:overflow-visible overflow-hidden">
+    <section id="home" className="relative w-full pt-[140px] pb-12 md:pt-[10px] md:pb-36 lg:-mb-48 bg-brand-darker overflow-visible lg:overflow-visible overflow-hidden">
       {/* Background decoration - z-0 to stay behind everything */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-darker via-[#050b1d] to-brand-darker z-0" />
       
@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
 
           {/* Superimposed Floating Image - Right Side */}
           {/* z-40 to sit ABOVE Stats (which is z-30) */}
-          <div className="w-full lg:w-1/2 relative z-40 flex justify-center lg:justify-end perspective-1000">
+          <div className="w-full lg:w-1/2 relative z-40 flex justify-center lg:justify-end perspective-1000 -mt-20 lg:mt-0">
              {/* Glow effect behind the container */}
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-brand-accent/20 blur-[100px] rounded-full -z-10"></div>
              

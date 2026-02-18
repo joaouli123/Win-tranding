@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     // Removed z-20 from here so children z-indexes interact with siblings (Stats) correctly
     // Kept relative and other layout classes
-    <section id="home" className="relative w-full pt-32 pb-12 md:pt-44 md:pb-24 lg:-mb-48 bg-brand-darker overflow-visible">
+    <section id="home" className="relative w-full pt-32 pb-24 md:pt-44 md:pb-36 lg:-mb-48 bg-brand-darker overflow-visible">
       {/* Background decoration - z-0 to stay behind everything */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-darker via-[#050b1d] to-brand-darker z-0" />
       
@@ -28,7 +28,7 @@ const Hero: React.FC = () => {
             <p className="text-brand-accent font-bold tracking-[0.2em] uppercase mb-4 animate-fade-in-up text-xs md:text-sm">
               Bem-vindo a Win Trading
             </p>
-            <h1 className="text-5xl md:text-6xl lg:text-7xl font-black leading-[1.1] mb-8 animate-fade-in-up delay-100 text-white tracking-tight">
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-black leading-[1.1] mb-8 animate-fade-in-up delay-100 text-white tracking-tight">
               Transformando <br />
               fronteiras em <br />
               <span className="text-brand-accent drop-shadow-[0_0_15px_rgba(0,182,255,0.3)]">oportunidades.</span>

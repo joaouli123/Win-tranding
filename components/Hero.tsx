@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     // Removed z-20 from here so children z-indexes interact with siblings (Stats) correctly
     // Kept relative and other layout classes
-    <section id="home" className="relative w-full pt-16 pb-24 md:pt-20 md:pb-36 lg:-mb-40 bg-brand-darker overflow-visible lg:overflow-visible overflow-hidden">
+    <section id="home" className="relative w-full pt-40 pb-24 md:pt-48 md:pb-32 lg:-mb-24 bg-brand-darker overflow-visible lg:overflow-visible overflow-hidden">
       {/* Background decoration - z-0 to stay behind everything */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-darker via-[#050b1d] to-brand-darker z-0" />
       
@@ -66,9 +66,8 @@ const Hero: React.FC = () => {
               // Using SVG ensures crispness at any size
               className="w-full max-w-[500px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none relative z-50"
               style={{
-                // Moved even further up to touch the navbar text base as requested
-                // Using scale to keep it large while translateY pulls it up
-                transform: 'rotate(-5deg) translateY(-280px) scale(1.2) translateX(10px)',
+                // Changed translateY to -60px to move it UP over the stats
+                transform: 'rotate(-5deg) translateY(20px) translateX(10px)',
               }}
             />
           </div>

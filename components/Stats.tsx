@@ -61,7 +61,7 @@ const Stats: React.FC = () => {
   ];
 
   return (
-    <div className="relative z-30 container mx-auto px-6 -mt-20 md:-mt-40">
+    <div className="relative z-30 container mx-auto px-6 -mt-10 md:-mt-40">
       <div className="grid grid-cols-1 md:grid-cols-3 gap-0 shadow-[0_20px_50px_rgba(0,0,0,0.3)] bg-brand-darker">
         {stats.map((stat, index) => (
           <div 

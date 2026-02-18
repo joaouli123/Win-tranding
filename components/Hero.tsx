@@ -56,7 +56,7 @@ const Hero: React.FC = () => {
 
           {/* Superimposed Floating Image - Right Side */}
           {/* z-40 to sit ABOVE Stats (which is z-30) */}
-          <div className="w-full lg:w-1/2 relative z-40 flex justify-center lg:justify-end perspective-1000 -mt-12 lg:mt-0">
+          <div className="w-full lg:w-1/2 relative z-40 flex justify-center lg:justify-end perspective-1000 -mt-24 lg:mt-0">
              {/* Glow effect behind the container */}
              <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-brand-accent/20 blur-[100px] rounded-full -z-10"></div>
              
@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
               src="/images/Design sem nome (4).svg" 
               alt="Cargo Container Illustration" 
               // Using SVG ensures crispness at any size
-              className="w-full max-w-[400px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none relative z-50"
+              className="w-full max-w-[380px] lg:max-w-[850px] h-auto object-contain drop-shadow-2xl pointer-events-none relative z-50"
               style={{
                 // Changed translateY to -60px to move it UP over the stats
                 transform: 'rotate(-5deg) translateY(20px) translateX(10px)',

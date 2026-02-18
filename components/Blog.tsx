@@ -6,21 +6,21 @@ const Blog: React.FC = () => {
   const posts: BlogPost[] = [
     {
       id: '1',
-      title: 'Commodi veniam sit labore et.',
-      excerpt: 'Omnis aut voluptates veritatis eum. Consequatur eum ea nam natus et. Accusamus voluptate amet corrupti. Aut et voluptates aspernatur.',
-      image: 'https://images.unsplash.com/photo-1566576912906-600ace75c390?q=80&w=1470&auto=format&fit=crop' // Containers
+      title: 'Estratégias para Redução de Custos na Importação',
+      excerpt: 'Descubra como a inteligência tributária e a escolha correta do porto podem impactar drasticamente sua margem de lucro.',
+      image: 'https://images.unsplash.com/photo-1494412651409-8963ce7935a7?q=80&w=1470&auto=format&fit=crop'
     },
     {
       id: '2',
-      title: 'Esse incidunt debitis consectetur.',
-      excerpt: 'Ea error asperiores et eveniet. Ut eum eligendi officia facilis minus vel ducimus ipsum. Provident qui deleniti dignissimos harum.',
-      image: 'https://images.unsplash.com/photo-1595246140625-573b715d1128?q=80&w=1635&auto=format&fit=crop' // Logistics/Port
+      title: 'O Futuro do Comércio Exterior em 2026',
+      excerpt: 'Tendências tecnológicas e novas regulamentações que estão moldando o cenário global de logística e trading.',
+      image: 'https://images.unsplash.com/photo-1578575437130-527eed3abbec?q=80&w=1470&auto=format&fit=crop'
     },
     {
       id: '3',
-      title: 'Qui in et quos ut excepturi enim qui.',
-      excerpt: 'Reiciendis iure autem cum. Aspernatur blanditiis quia ducimus voluptas voluptatem vel maxime. Est blanditiis autem accusamus.',
-      image: 'https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=1470&auto=format&fit=crop' // Data/Charts
+      title: 'Gestão de Riscos Documentais',
+      excerpt: 'Evite multas e atrasos desnecessários com um checklist rigoroso para seu despacho aduaneiro.',
+      image: 'https://images.unsplash.com/photo-1454165833767-027ffea9e77b?q=80&w=1470&auto=format&fit=crop'
     }
   ];
 

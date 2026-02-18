@@ -2,7 +2,7 @@ import React from 'react';
 import { MapPin, Phone, Mail, Instagram, Linkedin, Facebook, Youtube } from 'lucide-react';
 
 const Footer: React.FC = () => {
-  const logoUrl = "https://uxcodedev.com.br/wintrading/wp-content/uploads/2026/01/logo_wintrading-1.png-4-1024x222.avif";
+  const logoUrl = "https://uxcodedev.com.br/wintrading/wp-content/uploads/2026/01/logo_wintrading-1.png-4.png";
 
   return (
     <footer className="bg-[#020617] text-white pt-20 pb-8 font-sans relative z-10 border-t border-white/5">

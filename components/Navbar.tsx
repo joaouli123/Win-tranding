@@ -50,14 +50,17 @@ const Navbar: React.FC = () => {
           <div className="flex items-center gap-4">
              <span className="hidden md:block opacity-30">|</span>
              <div className="flex items-center gap-3">
-               <button className="hover:opacity-100 opacity-70 transition-opacity flex items-center gap-1" title="Português">
-                 <span className="text-sm">🇧🇷</span> <span className="hidden sm:inline">BR</span>
+               <button className="hover:opacity-100 opacity-70 transition-opacity flex items-center gap-1.5 group" title="Português">
+                 <img src="https://flagcdn.com/w20/br.png" alt="Português" className="w-5 h-auto rounded-sm group-hover:scale-110 transition-transform" />
+                 <span className="hidden sm:inline font-bold text-[10px]">BR</span>
                </button>
-               <button className="hover:opacity-100 opacity-70 transition-opacity flex items-center gap-1" title="English">
-                 <span className="text-sm">🇺🇸</span> <span className="hidden sm:inline">EN</span>
+               <button className="hover:opacity-100 opacity-70 transition-opacity flex items-center gap-1.5 group" title="English">
+                 <img src="https://flagcdn.com/w20/us.png" alt="English" className="w-5 h-auto rounded-sm group-hover:scale-110 transition-transform" />
+                 <span className="hidden sm:inline font-bold text-[10px]">EN</span>
                </button>
-               <button className="hover:opacity-100 opacity-70 transition-opacity flex items-center gap-1" title="Español">
-                 <span className="text-sm">🇪🇸</span> <span className="hidden sm:inline">ES</span>
+               <button className="hover:opacity-100 opacity-70 transition-opacity flex items-center gap-1.5 group" title="Español">
+                 <img src="https://flagcdn.com/w20/es.png" alt="Español" className="w-5 h-auto rounded-sm group-hover:scale-110 transition-transform" />
+                 <span className="hidden sm:inline font-bold text-[10px]">ES</span>
                </button>
              </div>
           </div>

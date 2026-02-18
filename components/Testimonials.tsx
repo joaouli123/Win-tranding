@@ -61,7 +61,7 @@ const Testimonials: React.FC = () => {
         <div className="flex flex-col lg:flex-row gap-16 items-center">
           
           {/* Left Column: Image Area with Overlay Card */}
-          <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px] group">
+          <div className="w-full lg:w-1/2 relative h-[500px] md:h-[600px] group order-2 lg:order-1">
               {/* Main Container - No overflow hidden here to allow card to pop out */}
               <div className="relative w-full h-full">
                  {testimonials.map((item, index) => (

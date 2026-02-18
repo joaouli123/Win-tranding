@@ -1,5 +1,5 @@
-import React from 'react';
-import { ArrowRight, ChevronRight } from 'lucide-react';
+import React, { useState, useRef, useEffect } from 'react';
+import { ArrowRight, ChevronRight, ChevronLeft } from 'lucide-react';
 import { BlogPost } from '../types';
 
 const Blog: React.FC = () => {
@@ -20,9 +20,19 @@ const Blog: React.FC = () => {
       id: '3',
       title: 'Gestão de Riscos Documentais',
       excerpt: 'Evite multas e atrasos desnecessários com um checklist rigoroso para seu despacho aduaneiro.',
-      image: '/images/blog-fix.png'
+      image: 'https://images.unsplash.com/photo-1586528116311-ad8dd3c8310d?q=80&w=1470&auto=format&fit=crop'
     }
   ];
+
+  const scrollRef = useRef<HTMLDivElement>(null);
+
+  const scroll = (direction: 'left' | 'right') => {
+    if (scrollRef.current) {
+      const { scrollLeft, clientWidth } = scrollRef.current;
+      const scrollTo = direction === 'left' ? scrollLeft - clientWidth : scrollLeft + clientWidth;
+      scrollRef.current.scrollTo({ left: scrollTo, behavior: 'smooth' });
+    }
+  };
 
   return (
     <section id="blog" className="py-24 bg-[#0B1121]">
@@ -40,16 +50,35 @@ const Blog: React.FC = () => {
             </p>
           </div>
           
-          <a 
-            href="#" 
-            className="bg-brand-secondary hover:bg-brand-accent text-white font-bold uppercase text-sm tracking-wider px-8 py-4 rounded-sm transition-all shadow-lg flex items-center gap-2 group whitespace-nowrap"
-          >
-            Acessar Blog <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
-          </a>
+          <div className="flex items-center gap-4">
+            <div className="flex md:hidden items-center gap-3 mr-4">
+              <button 
+                onClick={() => scroll('left')}
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-brand-accent transition-colors"
+              >
+                <ChevronLeft size={20} />
+              </button>
+              <button 
+                onClick={() => scroll('right')}
+                className="w-10 h-10 rounded-full border border-white/10 flex items-center justify-center text-white hover:bg-brand-accent transition-colors"
+              >
+                <ChevronRight size={20} />
+              </button>
+            </div>
+            <a 
+              href="#" 
+              className="bg-brand-secondary hover:bg-brand-accent text-white font-bold uppercase text-sm tracking-wider px-8 py-4 rounded-sm transition-all shadow-lg flex items-center gap-2 group whitespace-nowrap"
+            >
+              Acessar Blog <ChevronRight size={18} className="group-hover:translate-x-1 transition-transform" />
+            </a>
+          </div>
         </div>
 
         {/* Blog Grid with "Escadinha" (Staggered) Effect & Badges */}
-        <div className="flex overflow-x-auto md:grid md:grid-cols-3 gap-8 pb-12 snap-x snap-mandatory scrollbar-hide">
+        <div 
+          ref={scrollRef}
+          className="flex overflow-x-auto md:grid md:grid-cols-3 gap-8 pb-12 snap-x snap-mandatory scrollbar-hide"
+        >
           {posts.map((post, index) => (
             <article 
               key={post.id} 

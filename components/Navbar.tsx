@@ -14,7 +14,7 @@ const Navbar: React.FC = () => {
   }, []);
 
   const navLinks = [
-    { name: 'Home', href: '#home' },
+    { name: 'Início', href: '#home' },
     { name: 'Serviços', href: '#servicos' },
     { name: 'Quem Somos', href: '#sobre' },
     { name: 'Cotação', href: '#cotacao' },
@@ -76,7 +76,7 @@ const Navbar: React.FC = () => {
             <img 
               src={logoUrl} 
               alt="Win Trading Logo" 
-              className="h-10 md:h-12 w-auto object-contain drop-shadow-[0_0_15px_rgba(0,182,255,0.5)] transition-transform group-hover:scale-110" 
+              className="h-12 md:h-16 w-auto object-contain drop-shadow-[0_0_15px_rgba(0,182,255,0.5)] transition-transform group-hover:scale-110" 
             />
           </a>
 

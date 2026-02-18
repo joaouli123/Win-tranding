@@ -76,7 +76,7 @@ const Blog: React.FC = () => {
         {/* Blog Grid with "Escadinha" (Staggered) Effect & Badges */}
         <div 
           ref={scrollRef}
-          className="flex overflow-x-auto md:grid md:grid-cols-3 gap-8 pb-12 snap-x snap-mandatory scrollbar-hide"
+          className="flex overflow-x-auto md:grid md:grid-cols-3 gap-8 pb-12 snap-x snap-mandatory scrollbar-hide no-scrollbar"
         >
           {posts.map((post, index) => (
             <article 

@@ -5,7 +5,7 @@ const Hero: React.FC = () => {
   return (
     // Removed z-20 from here so children z-indexes interact with siblings (Stats) correctly
     // Kept relative and other layout classes
-    <section id="home" className="relative w-full pt-[10px] pb-24 md:pt-[10px] md:pb-36 lg:-mb-48 bg-brand-darker overflow-visible lg:overflow-visible overflow-hidden">
+    <section id="home" className="relative w-full pt-[100px] pb-24 md:pt-[10px] md:pb-36 lg:-mb-48 bg-brand-darker overflow-visible lg:overflow-visible overflow-hidden">
       {/* Background decoration - z-0 to stay behind everything */}
       <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-br from-brand-darker via-[#050b1d] to-brand-darker z-0" />
       

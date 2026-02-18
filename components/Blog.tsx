@@ -32,7 +32,7 @@ const Blog: React.FC = () => {
         <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-6">
           <div className="max-w-3xl">
             <span className="text-brand-accent font-bold tracking-[0.2em] uppercase mb-4 block text-sm">Win Trading Posts</span>
-            <h2 className="text-4xl md:text-5xl font-black text-white mb-4 leading-tight">
+            <h2 className="text-3xl md:text-4xl font-black text-white mb-4 leading-tight">
               Acompanhe nossos posts <br/> mais recentes:
             </h2>
             <p className="text-gray-400 text-lg font-light max-w-xl">

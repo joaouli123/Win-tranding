@@ -142,7 +142,7 @@ const Services: React.FC = () => {
                 <h4 className="text-sm font-bold tracking-[0.2em] uppercase text-brand-accent mb-4">
                 NOSSOS SERVIÇOS
                 </h4>
-                <h2 className="text-4xl md:text-5xl font-black mb-8 text-white leading-[1.1]">
+                <h2 className="text-3xl md:text-4xl font-black mb-8 text-white leading-[1.1]">
                 Soluções em <br />
                 <span className="text-brand-accent">comércio exterior</span>
                 </h2>

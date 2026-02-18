@@ -16,7 +16,7 @@ const Newsletter: React.FC = () => {
           
           {/* Left Text */}
           <div className="lg:w-1/2 text-center lg:text-left">
-            <h2 className="text-3xl md:text-4xl font-black text-white tracking-tight uppercase">
+            <h2 className="text-2xl md:text-3xl font-black text-white tracking-tight uppercase">
               Assine nossa newsletter
             </h2>
             <p className="text-blue-100 text-sm mt-2 opacity-90">

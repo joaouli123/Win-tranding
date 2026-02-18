@@ -42,7 +42,7 @@ const FAQ: React.FC = () => {
       <div className="container mx-auto px-6 flex flex-col md:flex-row gap-16">
         <div className="md:w-1/3">
           <h4 className="text-brand-accent text-sm font-bold tracking-[0.2em] uppercase mb-4">FAQ</h4>
-          <h2 className="text-4xl md:text-5xl font-black mb-8 text-white leading-tight">Dúvidas <br/> frequentes</h2>
+          <h2 className="text-3xl md:text-4xl font-black mb-8 text-white leading-tight">Dúvidas <br/> frequentes</h2>
           <a href="#cotacao" className="bg-brand-accent hover:bg-brand-accentHover text-white px-8 py-4 rounded-sm font-bold uppercase tracking-widest inline-block transition-all shadow-lg shadow-brand-accent/20">
             Falar com um especialista
           </a>

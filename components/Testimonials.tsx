@@ -116,7 +116,7 @@ const Testimonials: React.FC = () => {
              <span className="text-brand-accent font-bold tracking-[0.2em] uppercase text-sm mb-4 block animate-fade-in-up">
                 CLIENTES
              </span>
-             <h2 className="text-4xl md:text-5xl font-black leading-[1.1] tracking-tight text-white mb-8 animate-fade-in-up delay-100">
+             <h2 className="text-3xl md:text-4xl font-black leading-[1.1] tracking-tight text-white mb-8 animate-fade-in-up delay-100">
                 O que nossos clientes <br />
                 dizem sobre nós
              </h2>

@@ -24,7 +24,7 @@ const Quotation: React.FC = () => {
               <div className="inline-block px-3 py-1 bg-black/20 rounded-full text-xs font-bold uppercase tracking-widest mb-6 backdrop-blur-sm border border-white/10">
                 Logística Integrada
               </div>
-              <h2 className="text-4xl lg:text-5xl font-black mb-6 leading-tight">
+              <h2 className="text-3xl lg:text-4xl font-black mb-6 leading-tight">
                 Realize uma <br/>
                 cotação
               </h2>
